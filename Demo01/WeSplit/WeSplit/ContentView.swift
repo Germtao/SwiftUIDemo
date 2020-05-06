@@ -26,6 +26,19 @@ struct ContentView: View {
     /// 3. 当@State属性更改时，SwiftUI将重新调用body属性（即，重新加载我们的UI）
     /// 4. 因此，文本视图将获得checkAmount的更新值
     
+    var totalPerPerson: Double {
+        // 在这里计算每人的总数
+        let peopleCount = Double(numberOfPeople)
+        let tipSelection = Double(tipPercentages[tipPercentage])
+        let orderAmount = Double(checkAmount) ?? 0
+        
+        let tipValue = orderAmount / 100 * tipSelection
+        let grandTotal = orderAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+        
+        return amountPerPerson
+    }
+    
     var body: some View {
         NavigationView {
             Form {
@@ -41,7 +54,7 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Text("$\(checkAmount)")
+                    Text("$\(totalPerPerson, specifier: "%.2f")")
                 }
                 
                 Section(header: Text("离开时，你想付多少小费？")) {
