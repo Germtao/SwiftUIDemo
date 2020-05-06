@@ -27,15 +27,24 @@ struct ContentView: View {
     /// 4. 因此，文本视图将获得checkAmount的更新值
     
     var body: some View {
-        Form {
-            Section {
-                TextField("账单金额", text: $checkAmount)
-                    .keyboardType(.decimalPad)
+        NavigationView {
+            Form {
+                Section {
+                    TextField("账单金额", text: $checkAmount)
+                        .keyboardType(.decimalPad)
+                    
+                    Picker("人数", selection: $numberOfPeople) {
+                        ForEach(0 ..< 100) {
+                            Text("\($0)人")
+                        }
+                    }
+                }
+                
+                Section {
+                    Text("$\(checkAmount)")
+                }
             }
-            
-            Section {
-                Text("$\(checkAmount)")
-            }
+            .navigationBarTitle("账单")
         }
     }
 }
