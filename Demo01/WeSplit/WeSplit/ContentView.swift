@@ -9,16 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    /// 属性包装器 @State
-    /// @State允许绕过结构体的限制：知道不能更改它们的属性，因为结构是固定的
-    /// @State允许SwiftUI将该值单独存储在可以修改的地方
-    @State private var tapCount = 0
+    @State private var name = ""
     
     var body: some View {
-        Button(action: {
-            self.tapCount += 1
-        }) {
-            Text("Tap Count: \(tapCount)")
+        Form {
+            TextField("Enter your name", text: $name)
+            Text("Hello World")
+            Text("Your name is \(name)")
         }
     }
 }
