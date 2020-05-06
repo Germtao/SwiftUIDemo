@@ -43,6 +43,15 @@ struct ContentView: View {
                 Section {
                     Text("$\(checkAmount)")
                 }
+                
+                Section(header: Text("离开时，你想付多少小费？")) {
+                    Picker("小费百分比", selection: $tipPercentage) {
+                        ForEach(0 ..< tipPercentages.count) {
+                            Text("\(self.tipPercentages[$0])%")
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
             }
             .navigationBarTitle("账单")
         }
