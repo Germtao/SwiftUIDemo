@@ -10,32 +10,34 @@ import SwiftUI
 
 struct ContentView: View {
     
-    /// 1. 有一系列可能的学生名字
-    /// 2. 具有一个@State属性存储当前选定学生
-    /// 3. 创建一个Picker视图，要求用户选择他们最喜欢的，并将选择的值和@State属性双向绑定
-    /// 4. 使用ForEach循环遍历所有可能的学生姓名，将其转换为文本视图
+    /// 账单金额
+    @State private var checkAmount = ""
+    /// 人数
+    @State private var numberOfPeople = 2
+    /// 小费百分比
+    @State private var tipPercentage = 2
     
-    let students = ["Harry", "Hermione", "Ron"]
-    @State private var selectedStudent = 0
+    /// 小费百分比列表
+    let tipPercentages = [10, 15, 20, 25, 0]
+    
+    /// 同步的原因：
+    /// 1. 我们的文本输入框与checkAmount属性有双向绑定
+    /// 2. checkAmount属性用@State标记，它自动监视值的更改
+    /// 3. 当@State属性更改时，SwiftUI将重新调用body属性（即，重新加载我们的UI）
+    /// 4. 因此，文本视图将获得checkAmount的更新值
     
     var body: some View {
-        VStack {
-            Picker("选择学生", selection: $selectedStudent) {
-                ForEach(0 ..< students.count) {
-                    Text(self.students[$0])
-                }
+        Form {
+            Section {
+                TextField("账单金额", text: $checkAmount)
+                    .keyboardType(.decimalPad)
             }
-            Text("选择的学生 # \(students[selectedStudent])")
+            
+            Section {
+                Text("$\(checkAmount)")
+            }
         }
     }
-    
-    /// 总结：
-    /// 1. students数组不需要用@State标记，因为它是一个常量,不会改变
-    /// 2. selectedStudent属性初始值为0，但可以更改，这就是为什么它标记为@State的原因
-    /// 3. Picker有一个标签，"选择你的学生"，它告诉用户它做了什么，还提供了一些描述性的东西供屏幕阅读器朗读
-    /// 4. Picker与selectedStudent有双向绑定，这意味着它将开始显示0的选择，但是在用户滑动选择器时更新属性
-    /// 5. 在ForEach中，我们从0数到（但不包括）数组中的学生数
-    /// 6. 我们为每个学生创建一个文本视图，显示该学生的姓名
 }
 
 struct ContentView_Previews: PreviewProvider {
