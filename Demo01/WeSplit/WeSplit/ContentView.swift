@@ -11,25 +11,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         // 表单最大10行, 可以使用Section、Group
-        Form {
-            
-            Section {
-                Text("Hello, World!")
+        NavigationView {
+            Form {
+                
+                Section {
+                    Text("Hello, World!")
+                }
+                
+                Section {
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                }
+                
+                Group {
+                    Text("Hello World")
+                    Text("Hello World")
+                }
             }
-            
-            Section {
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-            }
-            
-            Group {
-                Text("Hello World")
-                Text("Hello World")
-            }
+            .navigationBarTitle(Text("SwiftUI"))
         }
     }
 }
