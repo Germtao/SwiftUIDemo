@@ -44,7 +44,26 @@ struct ContentView: View {
                 motto2
                     .foregroundColor(.blue)
             }
+            
+            /// 4. 视图拆分与组合
+            VStack(spacing: 10) {
+                CapsuleText(text: "First")
+                CapsuleText(text: "Second")
+            }
         }
+    }
+}
+
+struct CapsuleText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.largeTitle)
+            .padding()
+            .foregroundColor(.white)
+            .background(Color.blue)
+            .clipShape(Capsule())
     }
 }
 
