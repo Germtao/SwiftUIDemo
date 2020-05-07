@@ -61,6 +61,13 @@ struct ContentView: View {
                     .frame(width: 200, height: 100)
                     .watermark(with: "SwiftUI Demo")
             }
+            
+            GrideStack(rows: 4, columns: 4) { (row, column) in
+                HStack {
+                    Image(systemName: "\(row * 4 + column).circle")
+                    Text("R\(row) C\(column)")
+                }
+            }
         }
     }
 }
@@ -112,6 +119,31 @@ struct Watermark: ViewModifier {
                 .foregroundColor(.white)
                 .padding(5)
                 .background(Color.black)
+        }
+    }
+}
+
+/// 6. 自定义容器
+struct GrideStack<Content: View>: View {
+    let rows: Int
+    let columns: Int
+    let content: (Int, Int) -> Content
+    
+//    init(rows: Int, columns: Int, content: @escaping (Int, Int) -> Content) {
+//        self.rows = rows
+//        self.columns = columns
+//        self.content = content
+//    }
+    
+    var body: some View {
+        VStack {
+            ForEach(0 ..< rows, id: \.self) { row in
+                HStack {
+                    ForEach(0 ..< self.columns, id: \.self) { column in
+                        self.content(row, column)
+                    }
+                }
+            }
         }
     }
 }
