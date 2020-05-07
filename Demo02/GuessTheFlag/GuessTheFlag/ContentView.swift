@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showingAlert = false
+    
     var body: some View {
         VStack {
             
@@ -27,6 +30,15 @@ struct ContentView: View {
                     Image(systemName: "pencil")
                     Text("图文按钮")
                 }
+            }
+            
+            Button("弹窗") {
+                self.showingAlert = true
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Hello SwiftUI"),
+                      message: Text("This is some detail message."),
+                      dismissButton: .default(Text("OK")))
             }
         }
     }
