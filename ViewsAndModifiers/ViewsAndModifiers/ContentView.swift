@@ -45,15 +45,27 @@ struct ContentView: View {
                     .foregroundColor(.blue)
             }
             
-            /// 4. 视图拆分与组合
             VStack(spacing: 10) {
                 CapsuleText(text: "First")
                 CapsuleText(text: "Second")
+            }
+            
+            VStack(spacing: 10) {
+                Text("Hello World")
+                    .modifier(Title())
+                
+                Text("Hello SwiftUI")
+                    .titleStyle()
+                
+                Color.blue
+                    .frame(width: 200, height: 100)
+                    .watermark(with: "SwiftUI Demo")
             }
         }
     }
 }
 
+/// 4. 视图拆分与组合
 struct CapsuleText: View {
     var text: String
     
@@ -64,6 +76,43 @@ struct CapsuleText: View {
             .foregroundColor(.white)
             .background(Color.blue)
             .clipShape(Capsule())
+    }
+}
+
+/// 5. 自定义修饰符
+struct Title: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        self.modifier(Title())
+    }
+    
+    func watermark(with text: String) -> some View {
+        self.modifier(Watermark(text: text))
+    }
+}
+
+struct Watermark: ViewModifier {
+    var text: String
+    
+    func body(content: Content) -> some View {
+        ZStack(alignment: .bottomTrailing) {
+            content
+            Text(text)
+                .font(.caption)
+                .foregroundColor(.white)
+                .padding(5)
+                .background(Color.black)
+        }
     }
 }
 
