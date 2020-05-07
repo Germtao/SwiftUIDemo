@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     
+    @State private var score = 0
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .black]),
@@ -42,10 +44,13 @@ struct ContentView: View {
                         Image(self.countries[number])
                             .renderingMode(.original)
                             .clipShape(Capsule()) // 内置形状
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 绘制边框
-                            .shadow(color: .black, radius: 2)
+                            .overlay(Capsule().stroke(Color.white, lineWidth: 1)) // 绘制边框
+                            .shadow(color: .black, radius: 5)
                     }
                 }
+                
+                Text("Score: \(score)")
+                    .foregroundColor(.white)
                 
                 Spacer()
             }
@@ -62,8 +67,10 @@ struct ContentView: View {
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
+            score += 1
             scoreTitle = "Correct"
         } else {
+            score -= 1
             scoreTitle = "Wrong"
         }
         
