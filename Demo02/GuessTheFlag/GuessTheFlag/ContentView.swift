@@ -20,7 +20,10 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color.blue.edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.blue, .black]),
+                           startPoint: .top,
+                           endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 30) {
                 VStack {
@@ -28,6 +31,8 @@ struct ContentView: View {
                         .foregroundColor(.white)
                     Text(self.countries[correctAnswer])
                         .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
                 }
                 
                 ForEach(0 ..< 3) { number in
@@ -36,18 +41,15 @@ struct ContentView: View {
                     }) {
                         Image(self.countries[number])
                             .renderingMode(.original)
+                            .clipShape(Capsule()) // 内置形状
+                            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 绘制边框
+                            .shadow(color: .black, radius: 2)
                     }
                 }
                 
                 Spacer()
             }
         }
-            
-            /// 显示Alert了。这需要：
-            /// 1. 使用alert()修饰符，以便在showingScore为true时显示警报
-            /// 2. 展示我们设置的scoreTitle
-            /// 3. 有一个在点击调用askQuestion()时的关闭按钮
-            
         .alert(isPresented: $showingScore) {
             Alert(title: Text(scoreTitle),
                   message: Text("Your score is ???"),
