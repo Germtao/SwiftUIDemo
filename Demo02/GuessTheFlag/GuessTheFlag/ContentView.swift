@@ -10,35 +10,32 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var showingAlert = false
+    var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
+    
+    var correctAnswer = Int.random(in: 0 ... 2)
     
     var body: some View {
-        VStack {
+        ZStack {
+            Color.blue.edgesIgnoringSafeArea(.all)
             
-            Button(action: {
-                print("文本按钮已点击")
-            }) {
-                Text("文本按钮")
-            }
-            
-            Image(systemName: "pencil")
-            
-            Button(action: {
-                print("图文按钮已点击")
-            }) {
-                HStack(spacing: 10) {
-                    Image(systemName: "pencil")
-                    Text("图文按钮")
+            VStack(spacing: 30) {
+                VStack {
+                    Text("选择国旗")
+                        .foregroundColor(.white)
+                    Text(self.countries[correctAnswer])
+                        .foregroundColor(.white)
                 }
-            }
-            
-            Button("弹窗") {
-                self.showingAlert = true
-            }
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Hello SwiftUI"),
-                      message: Text("This is some detail message."),
-                      dismissButton: .default(Text("OK")))
+                
+                ForEach(0 ..< 3) { number in
+                    Button(action: {
+                        
+                    }) {
+                        Image(self.countries[number])
+                            .renderingMode(.original)
+                    }
+                }
+                
+                Spacer()
             }
         }
     }
