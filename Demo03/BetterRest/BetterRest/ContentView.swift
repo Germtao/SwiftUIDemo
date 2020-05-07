@@ -12,8 +12,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    static var defaultWakeUpTime: Date {
+        var components = DateComponents()
+        components.hour = 7
+        components.minute = 0
+        return Calendar.current.date(from: components) ?? Date()
+    }
+    
     @State private var sleepAmount = 8.0
-    @State private var wakeUp = Date()
+    @State private var wakeUp = defaultWakeUpTime
     @State private var coffeeAmount = 1
     
     @State private var alertTitle = ""
@@ -25,30 +32,27 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView {
-            VStack {
-                Text("你想什么时候醒？")
-                    .font(.headline)
+            Form {
                 
-                DatePicker("闹铃",
+                Section(header: Text("你想什么时候醒？").font(.headline)) {
+                    DatePicker("闹铃",
                            selection: $wakeUp,
                            displayedComponents: .hourAndMinute)
-                    .labelsHidden()
-                
-                Text("每日需要睡眠的时间")
-                    .font(.headline)
-                
-                Stepper(value: $sleepAmount, in: 4 ... 12, step: 0.25) {
-                    Text("\(sleepAmount, specifier: "%g") 小时")
+                        .labelsHidden()
+                        .datePickerStyle(WheelDatePickerStyle())
                 }
-                .padding()
                 
-                Text("每日咖啡摄入量")
-                    .font(.headline)
-                
-                Stepper(value: $coffeeAmount, in: 1...12) {
-                    Text("\(coffeeAmount) 杯")
+                Section(header: Text("每日需要睡眠的时间").font(.headline)) {
+                    Stepper(value: $sleepAmount, in: 4 ... 12, step: 0.25) {
+                        Text("\(sleepAmount, specifier: "%g") 小时")
+                    }
                 }
-                .padding()
+                
+                Section(header: Text("每日咖啡摄入量").font(.headline)) {
+                    Stepper(value: $coffeeAmount, in: 1...12) {
+                        Text("\(coffeeAmount) 杯")
+                    }
+                }
             }
             .navigationBarTitle("更好的休息")
             .navigationBarItems(trailing:
