@@ -35,6 +35,8 @@ struct ContentView: View {
                 in: 1...10
             )
             
+            Spacer(minLength: 10)
+            
             Button("隐式动画") {
                 self.animAmount += 1
             }
@@ -59,8 +61,6 @@ struct ContentView: View {
             .foregroundColor(.white)
             .clipShape(Circle())
             .rotation3DEffect(.degrees(animAmount1), axis: (x: 0, y: 1, z: 0)) // 沿Y轴旋转
-            
-            Spacer(minLength: 5)
             
             Button("控制动画堆栈") {
                 self.enabled.toggle()
@@ -104,6 +104,7 @@ struct ContentView: View {
                         self.isShowingRed.toggle()
                     }
                 }
+                .transition(.pivot)
                 
                 if isShowingRed {
                     Rectangle()
@@ -111,9 +112,9 @@ struct ContentView: View {
                         .frame(width: 100, height: 20)
 //                        .transition(.scale)
                         .transition(.asymmetric(insertion: .scale, removal: .opacity))
+//                        .transition(.pivot)
                 }
             }
-            
         }
     }
 }
