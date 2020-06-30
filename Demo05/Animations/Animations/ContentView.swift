@@ -15,6 +15,11 @@ struct ContentView: View {
     
     @State private var enabled = false
     
+    /// 存储其拖动量
+    @State private var dragAmount = CGSize.zero
+    
+    let letters = Array("Hello SwiftUI")
+    
     var body: some View {
         print(animAmount)
         
@@ -41,7 +46,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Button("显示动画") {
+            Button("显式动画") {
 //                withAnimation {
 //                    self.animAmount1 += 360
 //                }
@@ -67,6 +72,32 @@ struct ContentView: View {
             .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
             .animation(.interpolatingSpring(stiffness: 10, damping: 1))
 //            .background(enabled ? Color.blue : Color.red)
+            
+            Spacer()
+            
+            // 手势动画
+            LinearGradient(
+                gradient: Gradient(colors: [.yellow, .red]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .frame(width: 300, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .offset(dragAmount)
+            .gesture(
+                DragGesture()
+                    .onChanged { self.dragAmount = $0.translation }
+                    .onEnded { _ in
+                        // 显式动画
+                        withAnimation(.spring()) {
+                            self.dragAmount = .zero
+                        }
+                    }
+            )
+//            .animation(.spring()) // 隐式动画
+            
+            LabelView()
+            
         }
     }
 }

@@ -13,6 +13,7 @@
 		3B53D32224AAD1DE006C8873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B53D32124AAD1DE006C8873 /* Assets.xcassets */; };
 		3B53D32524AAD1DE006C8873 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B53D32424AAD1DE006C8873 /* Preview Assets.xcassets */; };
 		3B53D32824AAD1DE006C8873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B53D32624AAD1DE006C8873 /* LaunchScreen.storyboard */; };
+		3B53D33224AB11BA006C8873 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D33124AB11BA006C8873 /* LabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B53D32424AAD1DE006C8873 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B53D32724AAD1DE006C8873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B53D32924AAD1DE006C8873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B53D33124AB11BA006C8873 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3B53D31B24AAD1DB006C8873 /* AppDelegate.swift */,
 				3B53D31D24AAD1DB006C8873 /* SceneDelegate.swift */,
 				3B53D31F24AAD1DB006C8873 /* ContentView.swift */,
+				3B53D33124AB11BA006C8873 /* LabelView.swift */,
 				3B53D32124AAD1DE006C8873 /* Assets.xcassets */,
 				3B53D32624AAD1DE006C8873 /* LaunchScreen.storyboard */,
 				3B53D32924AAD1DE006C8873 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B53D31C24AAD1DB006C8873 /* AppDelegate.swift in Sources */,
+				3B53D33224AB11BA006C8873 /* LabelView.swift in Sources */,
 				3B53D31E24AAD1DB006C8873 /* SceneDelegate.swift in Sources */,
 				3B53D32024AAD1DB006C8873 /* ContentView.swift in Sources */,
 			);
