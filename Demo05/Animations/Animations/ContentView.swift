@@ -9,8 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var animAmount: CGFloat = 1
+    
     var body: some View {
-        Text("Hello, World!")
+        Button("隐式动画") {
+            self.animAmount += 1
+        }
+        .padding(50)
+        .background(Color.red)
+        .foregroundColor(Color.white)
+        .clipShape(Circle())
+        .scaleEffect(animAmount) // 放大
+        .blur(radius: (animAmount - 1) * 3) // 高斯模糊
+        .animation(.default)
     }
 }
 
