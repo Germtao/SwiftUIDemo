@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var animAmount: CGFloat = 1
     @State private var animAmount1 = 0.0
     
+    @State private var enabled = false
+    
     var body: some View {
         print(animAmount)
         
@@ -54,6 +56,17 @@ struct ContentView: View {
             .rotation3DEffect(.degrees(animAmount1), axis: (x: 0, y: 1, z: 0)) // 沿Y轴旋转
             
             Spacer()
+            
+            Button("控制动画堆栈") {
+                self.enabled.toggle()
+            }
+            .frame(width: 200, height: 200)
+            .background(enabled ? Color.blue : Color.red)
+//            .animation(nil)
+            .foregroundColor(.white)
+            .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
+            .animation(.interpolatingSpring(stiffness: 10, damping: 1))
+//            .background(enabled ? Color.blue : Color.red)
         }
     }
 }
