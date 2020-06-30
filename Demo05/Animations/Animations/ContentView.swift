@@ -21,8 +21,20 @@ struct ContentView: View {
         .foregroundColor(Color.white)
         .clipShape(Circle())
         .scaleEffect(animAmount) // 放大
-        .blur(radius: (animAmount - 1) * 3) // 高斯模糊
-        .animation(.default)
+        .animation(
+            Animation.easeInOut(duration: 1.0)
+//                .delay(1) // 延时
+            // 重复一定次数，甚至可以通过将autoreverses设置为true来使其前后反弹
+//            .repeatCount(3, autoreverses: true)
+            .repeatForever(autoreverses: true)
+        )
+        
+        // 弹簧动画
+//        .animation(
+//            // stiffness: 初始刚度 即初速度
+//            // damping: 阻尼 即摩擦力
+//            .interpolatingSpring(stiffness: 20, damping: 0.5)
+//        )
     }
 }
 
