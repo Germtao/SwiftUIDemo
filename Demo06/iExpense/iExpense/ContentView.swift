@@ -13,6 +13,8 @@ struct ContentView: View {
     // @ObservedObject 监听这些公告，并使用该对象刷新所有视图
     @ObservedObject var expenses = Expenses()
     
+    @State private var showingAddExpense = false
+    
     var body: some View {
         NavigationView {
             List {
@@ -24,12 +26,14 @@ struct ContentView: View {
             .navigationBarTitle("iExpense")
             .navigationBarItems(
                 trailing: Button(action: {
-                    let item = ExpenseItem(name: "Test", type: "Personal", amount: 5)
-                    self.expenses.items.append(item)
+                    self.showingAddExpense = true
                 }) {
                     Image(systemName: "plus")
                 }
             )
+        }
+        .sheet(isPresented: $showingAddExpense) {
+            AddView(expenses: self.expenses)
         }
     }
     
