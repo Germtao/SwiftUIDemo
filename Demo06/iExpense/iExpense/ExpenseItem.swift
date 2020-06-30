@@ -9,6 +9,7 @@
 import Foundation
 
 struct ExpenseItem {
+    let id = UUID() // 唯一的标志
     let name: String
     let type: String
     let amount: Int
