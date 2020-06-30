@@ -20,6 +20,8 @@ struct ContentView: View {
     
     let letters = Array("Hello SwiftUI")
     
+    @State private var isShowingRed = false
+    
     var body: some View {
         print(animAmount)
         
@@ -33,8 +35,6 @@ struct ContentView: View {
                 in: 1...10
             )
             
-            Spacer()
-            
             Button("隐式动画") {
                 self.animAmount += 1
             }
@@ -44,7 +44,7 @@ struct ContentView: View {
             .clipShape(Circle())
             .scaleEffect(animAmount)
             
-            Spacer()
+            Spacer(minLength: 5)
             
             Button("显式动画") {
 //                withAnimation {
@@ -60,12 +60,12 @@ struct ContentView: View {
             .clipShape(Circle())
             .rotation3DEffect(.degrees(animAmount1), axis: (x: 0, y: 1, z: 0)) // 沿Y轴旋转
             
-            Spacer()
+            Spacer(minLength: 5)
             
             Button("控制动画堆栈") {
                 self.enabled.toggle()
             }
-            .frame(width: 200, height: 200)
+            .frame(width: 150, height: 150)
             .background(enabled ? Color.blue : Color.red)
 //            .animation(nil)
             .foregroundColor(.white)
@@ -73,15 +73,13 @@ struct ContentView: View {
             .animation(.interpolatingSpring(stiffness: 10, damping: 1))
 //            .background(enabled ? Color.blue : Color.red)
             
-            Spacer()
-            
             // 手势动画
             LinearGradient(
                 gradient: Gradient(colors: [.yellow, .red]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
-            .frame(width: 300, height: 200)
+            .frame(width: 200, height: 100)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .offset(dragAmount)
             .gesture(
@@ -97,6 +95,24 @@ struct ContentView: View {
 //            .animation(.spring()) // 隐式动画
             
             LabelView()
+            
+            Spacer()
+            
+            HStack(spacing: 10) {
+                Button(isShowingRed ? "隐藏" : "显示") {
+                    withAnimation {
+                        self.isShowingRed.toggle()
+                    }
+                }
+                
+                if isShowingRed {
+                    Rectangle()
+                        .fill(Color.red)
+                        .frame(width: 100, height: 20)
+//                        .transition(.scale)
+                        .transition(.asymmetric(insertion: .scale, removal: .opacity))
+                }
+            }
             
         }
     }
