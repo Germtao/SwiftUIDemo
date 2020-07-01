@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        let astronauts = Bundle.main.decode("astronauts.json")
+        
+        return Text("\(astronauts.count)")
     }
 }
 
