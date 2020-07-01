@@ -17,7 +17,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(missions) { mission in
-                NavigationLink(destination: MissionView(mission: mission)) {
+                NavigationLink(
+                    destination: MissionView(mission: mission, astronauts: self.astronauts)
+                ) {
                     Image(mission.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
