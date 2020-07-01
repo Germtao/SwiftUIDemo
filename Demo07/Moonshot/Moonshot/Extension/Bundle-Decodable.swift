@@ -20,6 +20,11 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
+        let formatter = DateFormatter()
+        formatter.dateFormat = "y-MM-dd"
+        // 确定如何解码日期
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        
         guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) in bundle.")
         }
