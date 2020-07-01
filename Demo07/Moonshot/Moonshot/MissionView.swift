@@ -10,6 +10,11 @@ import SwiftUI
 
 struct MissionView: View {
     
+    struct CrewMember {
+        let role: String
+        let astronaut: Astronaut
+    }
+    
     let mission: Mission
     
     var body: some View {
