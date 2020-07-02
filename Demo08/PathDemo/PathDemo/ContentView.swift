@@ -13,7 +13,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let dataSource = ["Path、Shape等", "CGAffineTransform", "ImagePaint"]
+    let dataSource = ["Path、Shape等", "CGAffineTransform", "ImagePaint", "Metal"]
     
     var body: some View {
         NavigationView {
@@ -28,7 +28,8 @@ struct ContentView: View {
                             self.textView(self.dataSource[index])
                         }
                     } else {
-                        NavigationLink(destination: ImagePaintView()) {
+                        // ImagePaintView()
+                        NavigationLink(destination: ColorCyclingCircle()) {
                             self.textView(self.dataSource[index])
                         }
                     }
