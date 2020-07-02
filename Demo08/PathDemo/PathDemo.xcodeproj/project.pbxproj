@@ -17,6 +17,7 @@
 		3B38AB9924AD92A800730422 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9824AD92A800730422 /* PathView.swift */; };
 		3B38AB9B24AD956F00730422 /* CGAffineTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */; };
 		3B38AB9D24ADAC0800730422 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9C24ADAC0700730422 /* Flower.swift */; };
+		3B38AB9F24ADBA8D00730422 /* ImagePaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9E24ADBA8D00730422 /* ImagePaintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3B38AB9824AD92A800730422 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformView.swift; sourceTree = "<group>"; };
 		3B38AB9C24ADAC0700730422 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		3B38AB9E24ADBA8D00730422 /* ImagePaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaintView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				3B38AB8524AD7E5F00730422 /* ContentView.swift */,
 				3B38AB9824AD92A800730422 /* PathView.swift */,
 				3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */,
+				3B38AB9E24ADBA8D00730422 /* ImagePaintView.swift */,
 				3B38AB9524AD80B300730422 /* Triangle.swift */,
 				3B38AB9C24ADAC0700730422 /* Flower.swift */,
 				3B38AB9724AD902000730422 /* README.md */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B38AB9D24ADAC0800730422 /* Flower.swift in Sources */,
+				3B38AB9F24ADBA8D00730422 /* ImagePaintView.swift in Sources */,
 				3B38AB9924AD92A800730422 /* PathView.swift in Sources */,
 				3B38AB8224AD7E5F00730422 /* AppDelegate.swift in Sources */,
 				3B38AB8424AD7E5F00730422 /* SceneDelegate.swift in Sources */,

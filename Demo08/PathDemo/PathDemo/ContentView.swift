@@ -13,7 +13,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let dataSource = ["Path、Shape等", "CGAffineTransform"]
+    let dataSource = ["Path、Shape等", "CGAffineTransform", "ImagePaint"]
     
     var body: some View {
         NavigationView {
@@ -21,17 +21,25 @@ struct ContentView: View {
                 ForEach(0..<dataSource.count) { index in
                     if index == 0 {
                         NavigationLink(destination: PathView()) {
-                            Text(self.dataSource[index]).font(.headline)
+                            self.textView(self.dataSource[index])
+                        }
+                    } else if index == 1 {
+                        NavigationLink(destination: CGAffineTransformView()) {
+                            self.textView(self.dataSource[index])
                         }
                     } else {
-                        NavigationLink(destination: CGAffineTransformView()) {
-                            Text(self.dataSource[index]).font(.headline)
+                        NavigationLink(destination: ImagePaintView()) {
+                            self.textView(self.dataSource[index])
                         }
                     }
                 }
             }
             .navigationBarTitle("绘图")
         }
+    }
+    
+    func textView(_ text: String) -> Text {
+        return Text(text).font(.headline)
     }
 }
 
