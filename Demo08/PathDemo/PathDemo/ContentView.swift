@@ -39,8 +39,9 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    Arc(startAngle: .degrees(0), endAngle: .degrees(100), clockwise: true)
-                        .stroke(Color.blue, lineWidth: 10)
+                    Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
+                        .strokeBorder(Color.blue, lineWidth: 40)
+//                        .stroke(Color.blue, lineWidth: 40)
                         .frame(width: 200, height: 200)
                     
                     Spacer()
