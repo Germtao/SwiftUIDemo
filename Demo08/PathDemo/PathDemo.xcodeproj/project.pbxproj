@@ -14,6 +14,9 @@
 		3B38AB8B24AD7E6200730422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B38AB8A24AD7E6200730422 /* Preview Assets.xcassets */; };
 		3B38AB8E24AD7E6200730422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B38AB8C24AD7E6200730422 /* LaunchScreen.storyboard */; };
 		3B38AB9624AD80B300730422 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9524AD80B300730422 /* Triangle.swift */; };
+		3B38AB9924AD92A800730422 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9824AD92A800730422 /* PathView.swift */; };
+		3B38AB9B24AD956F00730422 /* CGAffineTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */; };
+		3B38AB9D24ADAC0800730422 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9C24ADAC0700730422 /* Flower.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		3B38AB8F24AD7E6200730422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B38AB9524AD80B300730422 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		3B38AB9724AD902000730422 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		3B38AB9824AD92A800730422 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformView.swift; sourceTree = "<group>"; };
+		3B38AB9C24ADAC0700730422 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,10 @@
 				3B38AB8124AD7E5F00730422 /* AppDelegate.swift */,
 				3B38AB8324AD7E5F00730422 /* SceneDelegate.swift */,
 				3B38AB8524AD7E5F00730422 /* ContentView.swift */,
+				3B38AB9824AD92A800730422 /* PathView.swift */,
+				3B38AB9A24AD956F00730422 /* CGAffineTransformView.swift */,
 				3B38AB9524AD80B300730422 /* Triangle.swift */,
+				3B38AB9C24ADAC0700730422 /* Flower.swift */,
 				3B38AB9724AD902000730422 /* README.md */,
 				3B38AB8724AD7E6200730422 /* Assets.xcassets */,
 				3B38AB8C24AD7E6200730422 /* LaunchScreen.storyboard */,
@@ -151,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B38AB9D24ADAC0800730422 /* Flower.swift in Sources */,
+				3B38AB9924AD92A800730422 /* PathView.swift in Sources */,
 				3B38AB8224AD7E5F00730422 /* AppDelegate.swift in Sources */,
 				3B38AB8424AD7E5F00730422 /* SceneDelegate.swift in Sources */,
+				3B38AB9B24AD956F00730422 /* CGAffineTransformView.swift in Sources */,
 				3B38AB8624AD7E5F00730422 /* ContentView.swift in Sources */,
 				3B38AB9624AD80B300730422 /* Triangle.swift in Sources */,
 			);
