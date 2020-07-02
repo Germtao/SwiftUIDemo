@@ -13,6 +13,7 @@
 		3B38AB8824AD7E6200730422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B38AB8724AD7E6200730422 /* Assets.xcassets */; };
 		3B38AB8B24AD7E6200730422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B38AB8A24AD7E6200730422 /* Preview Assets.xcassets */; };
 		3B38AB8E24AD7E6200730422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B38AB8C24AD7E6200730422 /* LaunchScreen.storyboard */; };
+		3B38AB9624AD80B300730422 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38AB9524AD80B300730422 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B38AB8A24AD7E6200730422 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B38AB8D24AD7E6200730422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B38AB8F24AD7E6200730422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B38AB9524AD80B300730422 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3B38AB8124AD7E5F00730422 /* AppDelegate.swift */,
 				3B38AB8324AD7E5F00730422 /* SceneDelegate.swift */,
 				3B38AB8524AD7E5F00730422 /* ContentView.swift */,
+				3B38AB9524AD80B300730422 /* Triangle.swift */,
 				3B38AB8724AD7E6200730422 /* Assets.xcassets */,
 				3B38AB8C24AD7E6200730422 /* LaunchScreen.storyboard */,
 				3B38AB8F24AD7E6200730422 /* Info.plist */,
@@ -149,6 +152,7 @@
 				3B38AB8224AD7E5F00730422 /* AppDelegate.swift in Sources */,
 				3B38AB8424AD7E5F00730422 /* SceneDelegate.swift in Sources */,
 				3B38AB8624AD7E5F00730422 /* ContentView.swift in Sources */,
+				3B38AB9624AD80B300730422 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
