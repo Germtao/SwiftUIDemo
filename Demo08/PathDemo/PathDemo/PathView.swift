@@ -10,42 +10,42 @@ import SwiftUI
 
 struct PathView: View {
     var body: some View {
-        NavigationView {
-            GeometryReader { geo in
-                ScrollView(.vertical) {
-                    VStack(spacing: 10) {
-    //                    Path { path in
-    //                        path.move(to: CGPoint(x: 200, y: 100))
-    //                        path.addLine(to: CGPoint(x: 100, y: 300))
-    //                        path.addLine(to: CGPoint(x: 300, y: 300))
-    //                        path.addLine(to: CGPoint(x: 200, y: 100))
-    //                        path.addLine(to: CGPoint(x: 100, y: 300))
-    //                    }
-    //            //        .fill(Color.blue)
-    //                    .stroke(
-    //                        Color.blue,
-    //                        style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
-    //                    )
-                                
-                        Triangle()
-            //                .fill(Color.red)
-                            .stroke(
-                                Color.red,
-                                style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
-                            )
-                            .frame(width: 200, height: 200)
-                        
-                        Spacer()
-                        
-                        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
-                            .strokeBorder(Color.blue, lineWidth: 40)
-    //                        .stroke(Color.blue, lineWidth: 40)
-                            .frame(width: 200, height: 200)
-                        
-                        Spacer()
-                    }
-                    .frame(maxWidth: .infinity)
+        GeometryReader { geo in
+            ScrollView(.vertical) {
+                VStack(spacing: 15) {
+//                    Path { path in
+//                        path.move(to: CGPoint(x: 200, y: 100))
+//                        path.addLine(to: CGPoint(x: 100, y: 300))
+//                        path.addLine(to: CGPoint(x: 300, y: 300))
+//                        path.addLine(to: CGPoint(x: 200, y: 100))
+//                        path.addLine(to: CGPoint(x: 100, y: 300))
+//                    }
+//            //        .fill(Color.blue)
+//                    .stroke(
+//                        Color.blue,
+//                        style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
+//                    )
+                    
+                    Spacer()
+                            
+                    Triangle()
+        //                .fill(Color.red)
+                        .stroke(
+                            Color.red,
+                            style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
+                        )
+                        .frame(width: 200, height: 200)
+                    
+                    Spacer()
+                    
+                    Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
+                        .strokeBorder(Color.blue, lineWidth: 40)
+//                        .stroke(Color.blue, lineWidth: 40)
+                        .frame(width: 200, height: 200)
+                    
+                    Spacer()
                 }
+                .frame(maxWidth: .infinity)
             }
         }
         .navigationBarTitle("Path、Shade等", displayMode: .inline)
