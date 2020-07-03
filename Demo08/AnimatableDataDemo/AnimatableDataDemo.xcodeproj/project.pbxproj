@@ -14,6 +14,7 @@
 		3B38ABDA24ADE48600730422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B38ABD924ADE48600730422 /* Preview Assets.xcassets */; };
 		3B38ABDD24ADE48600730422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B38ABDB24ADE48600730422 /* LaunchScreen.storyboard */; };
 		3B38ABE524ADE75400730422 /* Trapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ABE424ADE75400730422 /* Trapezoid.swift */; };
+		3BA1026E24AF055D008BD6E7 /* Checkerboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1026D24AF055D008BD6E7 /* Checkerboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3B38ABDC24ADE48600730422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B38ABDE24ADE48600730422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B38ABE424ADE75400730422 /* Trapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezoid.swift; sourceTree = "<group>"; };
+		3BA1026D24AF055D008BD6E7 /* Checkerboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkerboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3B38ABD024ADE48300730422 /* AppDelegate.swift */,
 				3B38ABD224ADE48300730422 /* SceneDelegate.swift */,
 				3B38ABD424ADE48300730422 /* ContentView.swift */,
+				3BA1026D24AF055D008BD6E7 /* Checkerboard.swift */,
 				3B38ABE424ADE75400730422 /* Trapezoid.swift */,
 				3B38ABD624ADE48600730422 /* Assets.xcassets */,
 				3B38ABDB24ADE48600730422 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B38ABE524ADE75400730422 /* Trapezoid.swift in Sources */,
+				3BA1026E24AF055D008BD6E7 /* Checkerboard.swift in Sources */,
 				3B38ABD124ADE48300730422 /* AppDelegate.swift in Sources */,
 				3B38ABD324ADE48300730422 /* SceneDelegate.swift in Sources */,
 				3B38ABD524ADE48300730422 /* ContentView.swift in Sources */,
