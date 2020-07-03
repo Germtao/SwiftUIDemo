@@ -13,6 +13,7 @@
 		3BA1028224AF0D58008BD6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA1028124AF0D58008BD6E7 /* Assets.xcassets */; };
 		3BA1028524AF0D58008BD6E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA1028424AF0D58008BD6E7 /* Preview Assets.xcassets */; };
 		3BA1028824AF0D58008BD6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA1028624AF0D58008BD6E7 /* LaunchScreen.storyboard */; };
+		3BA1029224AF0D9A008BD6E7 /* Spirograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1029124AF0D9A008BD6E7 /* Spirograph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3BA1028424AF0D58008BD6E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA1028724AF0D58008BD6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA1028924AF0D58008BD6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA1029124AF0D9A008BD6E7 /* Spirograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirograph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3BA1027B24AF0D54008BD6E7 /* AppDelegate.swift */,
 				3BA1027D24AF0D54008BD6E7 /* SceneDelegate.swift */,
 				3BA1027F24AF0D54008BD6E7 /* ContentView.swift */,
+				3BA1029124AF0D9A008BD6E7 /* Spirograph.swift */,
 				3BA1028124AF0D58008BD6E7 /* Assets.xcassets */,
 				3BA1028624AF0D58008BD6E7 /* LaunchScreen.storyboard */,
 				3BA1028924AF0D58008BD6E7 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				3BA1027C24AF0D54008BD6E7 /* AppDelegate.swift in Sources */,
 				3BA1027E24AF0D54008BD6E7 /* SceneDelegate.swift in Sources */,
+				3BA1029224AF0D9A008BD6E7 /* Spirograph.swift in Sources */,
 				3BA1028024AF0D54008BD6E7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
