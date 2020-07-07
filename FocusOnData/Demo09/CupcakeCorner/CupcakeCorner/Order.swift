@@ -39,11 +39,33 @@ class Order: ObservableObject {
     @Published var city = ""
     @Published var zip = ""
     
+    /// 地址是否有效
     var hasValidAddress: Bool {
         if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
             return false
         }
         
         return true
+    }
+    
+    /// 蛋糕总价格
+    var cost: Double {
+        // 每个蛋糕 $2
+        var cost = Double(quantity) * 2
+        
+        // 复杂的蛋糕成本更高
+        cost += Double(type) / 2
+        
+        // 额外的糖霜费 $1
+        if extraFrosting {
+            cost += Double(quantity)
+        }
+        
+        // 添加巧克力末 $0.50
+        if addSprinkles {
+            cost += Double(quantity) / 2
+        }
+        
+        return cost
     }
 }

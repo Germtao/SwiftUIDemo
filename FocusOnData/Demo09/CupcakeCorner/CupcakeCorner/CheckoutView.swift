@@ -12,7 +12,25 @@ struct CheckoutView: View {
     @ObservedObject var order: Order
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            ScrollView {
+                VStack {
+                    Image("cupcakes")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geo.size.width)
+                    
+                    Text("总价格：$\(self.order.cost, specifier: "%.2f")")
+                        .font(.title)
+                    
+                    Button("下单") {
+                        // 下单
+                    }
+                    .padding()
+                }
+            }
+        }
+        .navigationBarTitle("支付订单", displayMode: .inline)
     }
 }
 
