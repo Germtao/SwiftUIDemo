@@ -34,5 +34,16 @@ class Order: ObservableObject {
     /// 用户是否要在蛋糕上撒些巧克力
     @Published var addSprinkles = false
     
+    @Published var name = ""
+    @Published var streetAddress = ""
+    @Published var city = ""
+    @Published var zip = ""
     
+    var hasValidAddress: Bool {
+        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+            return false
+        }
+        
+        return true
+    }
 }

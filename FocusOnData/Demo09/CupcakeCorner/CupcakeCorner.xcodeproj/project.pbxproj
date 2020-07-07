@@ -13,6 +13,7 @@
 		3BA102A624AF2117008BD6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA102A524AF2117008BD6E7 /* Assets.xcassets */; };
 		3BA102A924AF2117008BD6E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA102A824AF2117008BD6E7 /* Preview Assets.xcassets */; };
 		3BA102AC24AF2117008BD6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA102AA24AF2117008BD6E7 /* LaunchScreen.storyboard */; };
+		3BA1031624B46575008BD6E7 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1031524B46575008BD6E7 /* CheckoutView.swift */; };
 		7128E9BD24AF78C700DE2AF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128E9BC24AF78C700DE2AF5 /* Order.swift */; };
 		7128E9BF24AF7DF100DE2AF5 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128E9BE24AF7DF100DE2AF5 /* AddressView.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		3BA102A824AF2117008BD6E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA102AB24AF2117008BD6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA102AD24AF2117008BD6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA1031524B46575008BD6E7 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		7128E9BC24AF78C700DE2AF5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7128E9BE24AF7DF100DE2AF5 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				3BA102A124AF2110008BD6E7 /* SceneDelegate.swift */,
 				3BA102A324AF2110008BD6E7 /* ContentView.swift */,
 				7128E9BE24AF7DF100DE2AF5 /* AddressView.swift */,
+				3BA1031524B46575008BD6E7 /* CheckoutView.swift */,
 				7128E9BC24AF78C700DE2AF5 /* Order.swift */,
 				3BA102A524AF2117008BD6E7 /* Assets.xcassets */,
 				3BA102AA24AF2117008BD6E7 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			files = (
 				3BA102A024AF2110008BD6E7 /* AppDelegate.swift in Sources */,
 				3BA102A224AF2110008BD6E7 /* SceneDelegate.swift in Sources */,
+				3BA1031624B46575008BD6E7 /* CheckoutView.swift in Sources */,
 				7128E9BD24AF78C700DE2AF5 /* Order.swift in Sources */,
 				3BA102A424AF2110008BD6E7 /* ContentView.swift in Sources */,
 				7128E9BF24AF7DF100DE2AF5 /* AddressView.swift in Sources */,

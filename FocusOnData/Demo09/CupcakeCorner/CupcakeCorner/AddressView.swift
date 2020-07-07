@@ -12,7 +12,21 @@ struct AddressView: View {
     @ObservedObject var order: Order
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                TextField("姓名", text: $order.name)
+                TextField("街道地址", text: $order.streetAddress)
+                TextField("城市", text: $order.city)
+                TextField("Zip", text: $order.zip)
+            }
+            
+            Section {
+                NavigationLink(destination: CheckoutView(order: order)) {
+                    Text("检查有效地址")
+                }
+                .disabled(!order.hasValidAddress)
+            }
+        }
     }
 }
 
