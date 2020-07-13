@@ -15,20 +15,23 @@ struct ContentView: View {
     @State private var showingAddScreen = false
     
     var body: some View {
-        List {
-            ForEach(books, id: \.self) { book in
-                NavigationLink(destination: Text(book.title ?? "Unknown Title")) {
-                    EmojiRatingView(rating: book.rating)
-                        .font(.largeTitle)
-                    
-                    VStack(alignment: .leading) {
-                        Text(book.title ?? "Unknown Title")
-                            .font(.headline)
-                        Text(book.author ?? "Unknown Author")
-                            .foregroundColor(.secondary)
+        NavigationView {
+            List {
+                ForEach(books, id: \.self) { book in
+                    NavigationLink(destination: DetailView(book: book)) {
+                        EmojiRatingView(rating: book.rating)
+                            .font(.largeTitle)
+                        
+                        VStack(alignment: .leading) {
+                            Text(book.title ?? "Unknown Title")
+                                .font(.headline)
+                            Text(book.author ?? "Unknown Author")
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
             }
+            .navigationBarTitle("Bookworm")
         }
     }
 }
