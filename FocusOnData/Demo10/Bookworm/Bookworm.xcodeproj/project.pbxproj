@@ -15,6 +15,7 @@
 		3B9D642924B5C4B5009A7300 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D642824B5C4B5009A7300 /* Preview Assets.xcassets */; };
 		3B9D642C24B5C4B5009A7300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9D642A24B5C4B5009A7300 /* LaunchScreen.storyboard */; };
 		3B9D643424B5C54D009A7300 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D643324B5C54D009A7300 /* AddBookView.swift */; };
+		3B9D643624BC116A009A7300 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D643524BC116A009A7300 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3B9D642B24B5C4B5009A7300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B9D642D24B5C4B5009A7300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B9D643324B5C54D009A7300 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		3B9D643524BC116A009A7300 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3B9D641E24B5C4B3009A7300 /* SceneDelegate.swift */,
 				3B9D642324B5C4B3009A7300 /* ContentView.swift */,
 				3B9D643324B5C54D009A7300 /* AddBookView.swift */,
+				3B9D643524BC116A009A7300 /* RatingView.swift */,
 				3B9D642524B5C4B5009A7300 /* Assets.xcassets */,
 				3B9D642A24B5C4B5009A7300 /* LaunchScreen.storyboard */,
 				3B9D642D24B5C4B5009A7300 /* Info.plist */,
@@ -155,6 +158,7 @@
 				3B9D641D24B5C4B3009A7300 /* AppDelegate.swift in Sources */,
 				3B9D642224B5C4B3009A7300 /* Bookworm.xcdatamodeld in Sources */,
 				3B9D642424B5C4B3009A7300 /* ContentView.swift in Sources */,
+				3B9D643624BC116A009A7300 /* RatingView.swift in Sources */,
 				3B9D641F24B5C4B3009A7300 /* SceneDelegate.swift in Sources */,
 				3B9D643424B5C54D009A7300 /* AddBookView.swift in Sources */,
 			);
