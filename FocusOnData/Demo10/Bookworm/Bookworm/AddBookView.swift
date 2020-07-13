@@ -11,6 +11,9 @@ import SwiftUI
 struct AddBookView: View {
     @Environment(\.managedObjectContext) var moc
     
+    /// 环境属性来跟踪当前的演示模式
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var title = ""
     @State private var author = ""
     @State private var rating = 3
@@ -47,6 +50,7 @@ struct AddBookView: View {
                 Section {
                     Button("保存") {
                         self.addBook()
+                        self.presentationMode.wrappedValue.dismiss()
                     }
                 }
             }
