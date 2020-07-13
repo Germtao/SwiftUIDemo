@@ -33,9 +33,32 @@ struct ContentView: View {
                         }
                     }
                 }
+                .onDelete(perform: deleteBooks)
             }
             .navigationBarTitle("Bookworm")
+            .navigationBarItems(leading: EditButton(), trailing: Button(action: {
+                self.showingAddScreen.toggle()
+            }) {
+                Image(systemName: "plus")
+            })
+            .sheet(isPresented: $showingAddScreen) {
+                AddBookView().environment(\.managedObjectContext, self.moc)
+            }
         }
+    }
+    
+    /// 从 Core Data 中删除数据
+    func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            // 在我们的获取请求中找到这本书
+            let book = books[offset]
+            
+            // 从上下文中删除它
+            moc.delete(book)
+        }
+        
+        // 保存上下文
+        try? moc.save()
     }
 }
 
