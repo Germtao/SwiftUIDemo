@@ -10,6 +10,16 @@ import SwiftUI
 import CoreImage
 import CoreImage.CIFilterBuiltins
 
+class ImageSaver: NSObject {
+    func writeToPhotoAlbum(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
+    }
+    
+    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        print("Save finished!")
+    }
+}
+
 struct ContentView: View {
     @State private var image: Image?
     
@@ -36,6 +46,15 @@ struct ContentView: View {
     func updateImage() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
+        
+        // 第一个是要保存的图像
+        // 第二个是应通知有关保存结果的对象
+        // 第三个是应运行的对象的方法
+        // 第四个是可以在此处提供任何类型的数据，并且在调用我们的完成方法时会将其传递回给我们
+//        UIImageWriteToSavedPhotosAlbum(inputImage, nil, nil, nil)
+        
+        let imageSaver = ImageSaver()
+        imageSaver.writeToPhotoAlbum(image: inputImage)
     }
     
     func loadImage() {
