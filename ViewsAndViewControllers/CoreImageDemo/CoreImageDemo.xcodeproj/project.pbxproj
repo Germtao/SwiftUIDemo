@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B43920624BEE5DB00FE04C7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43920524BEE5DB00FE04C7 /* ImagePicker.swift */; };
 		3B9D646824BE9EDB009A7300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D646724BE9EDB009A7300 /* AppDelegate.swift */; };
 		3B9D646A24BE9EDB009A7300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D646924BE9EDB009A7300 /* SceneDelegate.swift */; };
 		3B9D646C24BE9EDB009A7300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D646B24BE9EDB009A7300 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B43920524BEE5DB00FE04C7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3B9D646424BE9EDB009A7300 /* CoreImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9D646724BE9EDB009A7300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B9D646924BE9EDB009A7300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				3B9D646724BE9EDB009A7300 /* AppDelegate.swift */,
 				3B9D646924BE9EDB009A7300 /* SceneDelegate.swift */,
 				3B9D646B24BE9EDB009A7300 /* ContentView.swift */,
+				3B43920524BEE5DB00FE04C7 /* ImagePicker.swift */,
 				3B9D646D24BE9EDE009A7300 /* Assets.xcassets */,
 				3B9D647224BE9EDE009A7300 /* LaunchScreen.storyboard */,
 				3B9D647524BE9EDE009A7300 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9D646824BE9EDB009A7300 /* AppDelegate.swift in Sources */,
+				3B43920624BEE5DB00FE04C7 /* ImagePicker.swift in Sources */,
 				3B9D646A24BE9EDB009A7300 /* SceneDelegate.swift in Sources */,
 				3B9D646C24BE9EDB009A7300 /* ContentView.swift in Sources */,
 			);
