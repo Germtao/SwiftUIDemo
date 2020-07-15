@@ -15,6 +15,8 @@ struct ContentView: View {
     
     @State private var showingImagePicker = false
     
+    @State private var inputImage: UIImage?
+    
     var body: some View {
         VStack {
             image?
@@ -26,9 +28,14 @@ struct ContentView: View {
             }
         }
         .onAppear(perform: loadImage)
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker()
+        .sheet(isPresented: $showingImagePicker, onDismiss: updateImage) {
+            ImagePicker(image: self.$inputImage)
         }
+    }
+    
+    func updateImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
     
     func loadImage() {
