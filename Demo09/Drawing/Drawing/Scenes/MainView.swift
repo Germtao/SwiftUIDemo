@@ -64,8 +64,39 @@ struct MainView: View {
                             Text("使用AnimatableData动画自定义形状")
                         }
                     )
+                    
+                    NavigationLink(
+                        destination: AnimatablePairExample(),
+                        label: {
+                            Text("对多个属性使用AnimatablePair")
+                        }
+                    )
+                    
+                    NavigationLink(
+                        destination: SpirographExample(),
+                        label: {
+                            Text("绘制旋描仪")
+                        }
+                    )
+                }
+                
+                Section(header: Text("Day 46: 挑战")) {
+                    NavigationLink(
+                        destination: ArrowExample(),
+                        label: {
+                            Text("自定义箭头形状")
+                        }
+                    )
+                    
+                    NavigationLink(
+                        destination: ColorCyclingRectangleExample(),
+                        label: {
+                            Text("彩色矩形")
+                        }
+                    )
                 }
             }
+            .navigationTitle("SwiftUI 绘图")
         }
     }
 }

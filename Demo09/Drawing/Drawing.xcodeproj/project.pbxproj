@@ -24,6 +24,15 @@
 		3B6C8C7624E690130093DD3D /* ScreenedCirclesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7524E690130093DD3D /* ScreenedCirclesExample.swift */; };
 		3B6C8C7824E694420093DD3D /* Trapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7724E694420093DD3D /* Trapezoid.swift */; };
 		3B6C8C7A24E6977C0093DD3D /* AnimatableDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7924E6977C0093DD3D /* AnimatableDataExample.swift */; };
+		3B6C8C7C24EA15620093DD3D /* AnimatablePairExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7B24EA15620093DD3D /* AnimatablePairExample.swift */; };
+		3B6C8C7E24EA15D90093DD3D /* Checkerboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7D24EA15D90093DD3D /* Checkerboard.swift */; };
+		3B6C8C8024EA1C650093DD3D /* Spirograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C7F24EA1C650093DD3D /* Spirograph.swift */; };
+		3B6C8C8324EA1D510093DD3D /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8224EA1D510093DD3D /* GCD.swift */; };
+		3B6C8C8524EA1F060093DD3D /* SpirographExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8424EA1F060093DD3D /* SpirographExample.swift */; };
+		3B6C8C8724EA28330093DD3D /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8624EA28330093DD3D /* Arrow.swift */; };
+		3B6C8C8924EA2CE20093DD3D /* ArrowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8824EA2CE20093DD3D /* ArrowExample.swift */; };
+		3B6C8C8B24EA30A80093DD3D /* ColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8A24EA30A80093DD3D /* ColorCyclingRectangle.swift */; };
+		3B6C8C8D24EA32980093DD3D /* ColorCyclingRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8C8C24EA32980093DD3D /* ColorCyclingRectangleExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +55,15 @@
 		3B6C8C7524E690130093DD3D /* ScreenedCirclesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenedCirclesExample.swift; sourceTree = "<group>"; };
 		3B6C8C7724E694420093DD3D /* Trapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezoid.swift; sourceTree = "<group>"; };
 		3B6C8C7924E6977C0093DD3D /* AnimatableDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataExample.swift; sourceTree = "<group>"; };
+		3B6C8C7B24EA15620093DD3D /* AnimatablePairExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairExample.swift; sourceTree = "<group>"; };
+		3B6C8C7D24EA15D90093DD3D /* Checkerboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkerboard.swift; sourceTree = "<group>"; };
+		3B6C8C7F24EA1C650093DD3D /* Spirograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirograph.swift; sourceTree = "<group>"; };
+		3B6C8C8224EA1D510093DD3D /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		3B6C8C8424EA1F060093DD3D /* SpirographExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographExample.swift; sourceTree = "<group>"; };
+		3B6C8C8624EA28330093DD3D /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		3B6C8C8824EA2CE20093DD3D /* ArrowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowExample.swift; sourceTree = "<group>"; };
+		3B6C8C8A24EA30A80093DD3D /* ColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingRectangle.swift; sourceTree = "<group>"; };
+		3B6C8C8C24EA32980093DD3D /* ColorCyclingRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingRectangleExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +125,10 @@
 				3B6C8C6924E66DBA0093DD3D /* RadialFlowerExample.swift */,
 				3B6C8C6D24E67EAE0093DD3D /* ColorGradientCyclingExample.swift */,
 				3B6C8C7924E6977C0093DD3D /* AnimatableDataExample.swift */,
+				3B6C8C7B24EA15620093DD3D /* AnimatablePairExample.swift */,
+				3B6C8C8424EA1F060093DD3D /* SpirographExample.swift */,
+				3B6C8C8824EA2CE20093DD3D /* ArrowExample.swift */,
+				3B6C8C8C24EA32980093DD3D /* ColorCyclingRectangleExample.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -114,6 +136,7 @@
 		3B6C8C6324E6642E0093DD3D /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				3B6C8C8124EA1D350093DD3D /* MathUtils */,
 				3B6C8C6F24E67F2A0093DD3D /* Views */,
 				3B6C8C6424E664500093DD3D /* Shapes */,
 			);
@@ -127,6 +150,9 @@
 				3B6C8C6724E667340093DD3D /* Arc.swift */,
 				3B6C8C6B24E66E2E0093DD3D /* RadialFlower.swift */,
 				3B6C8C7724E694420093DD3D /* Trapezoid.swift */,
+				3B6C8C7D24EA15D90093DD3D /* Checkerboard.swift */,
+				3B6C8C7F24EA1C650093DD3D /* Spirograph.swift */,
+				3B6C8C8624EA28330093DD3D /* Arrow.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -135,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6C8C7024E67F350093DD3D /* ColorCyclingCircle.swift */,
+				3B6C8C8A24EA30A80093DD3D /* ColorCyclingRectangle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +173,14 @@
 				3B6C8C7524E690130093DD3D /* ScreenedCirclesExample.swift */,
 			);
 			path = "Blend Modes";
+			sourceTree = "<group>";
+		};
+		3B6C8C8124EA1D350093DD3D /* MathUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C8C8224EA1D510093DD3D /* GCD.swift */,
+			);
+			path = MathUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,17 +253,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6C8C6224E6634B0093DD3D /* CustomShapesExample.swift in Sources */,
+				3B6C8C8B24EA30A80093DD3D /* ColorCyclingRectangle.swift in Sources */,
+				3B6C8C8524EA1F060093DD3D /* SpirographExample.swift in Sources */,
 				3B6C8C5024E63B3B0093DD3D /* ContentView.swift in Sources */,
+				3B6C8C8024EA1C650093DD3D /* Spirograph.swift in Sources */,
 				3B6C8C6824E667340093DD3D /* Arc.swift in Sources */,
+				3B6C8C8D24EA32980093DD3D /* ColorCyclingRectangleExample.swift in Sources */,
+				3B6C8C8324EA1D510093DD3D /* GCD.swift in Sources */,
 				3B6C8C5E24E65E7B0093DD3D /* MainView.swift in Sources */,
 				3B6C8C6E24E67EAE0093DD3D /* ColorGradientCyclingExample.swift in Sources */,
 				3B6C8C7124E67F350093DD3D /* ColorCyclingCircle.swift in Sources */,
 				3B6C8C7A24E6977C0093DD3D /* AnimatableDataExample.swift in Sources */,
 				3B6C8C6A24E66DBA0093DD3D /* RadialFlowerExample.swift in Sources */,
+				3B6C8C8724EA28330093DD3D /* Arrow.swift in Sources */,
 				3B6C8C6624E664850093DD3D /* Triangle.swift in Sources */,
 				3B6C8C7624E690130093DD3D /* ScreenedCirclesExample.swift in Sources */,
 				3B6C8C6C24E66E2E0093DD3D /* RadialFlower.swift in Sources */,
 				3B6C8C4E24E63B3A0093DD3D /* DrawingApp.swift in Sources */,
+				3B6C8C8924EA2CE20093DD3D /* ArrowExample.swift in Sources */,
+				3B6C8C7E24EA15D90093DD3D /* Checkerboard.swift in Sources */,
+				3B6C8C7C24EA15620093DD3D /* AnimatablePairExample.swift in Sources */,
 				3B6C8C6024E65F200093DD3D /* TrianglePathExample.swift in Sources */,
 				3B6C8C7824E694420093DD3D /* Trapezoid.swift in Sources */,
 				3B6C8C7424E6853A0093DD3D /* BlendModesListView.swift in Sources */,
