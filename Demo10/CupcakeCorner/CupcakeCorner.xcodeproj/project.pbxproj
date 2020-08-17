@@ -12,6 +12,10 @@
 		3B6C8C9F24EA36CC0093DD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6C8C9E24EA36CC0093DD3D /* Assets.xcassets */; };
 		3B6C8CA224EA36CC0093DD3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6C8CA124EA36CC0093DD3D /* Preview Assets.xcassets */; };
 		3B6C8CAB24EA67250093DD3D /* NumberFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CAA24EA67250093DD3D /* NumberFormatters.swift */; };
+		3B6C8CAF24EA68770093DD3D /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CAE24EA68770093DD3D /* Cupcake.swift */; };
+		3B6C8CB124EA705E0093DD3D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB024EA705E0093DD3D /* Order.swift */; };
+		3B6C8CB324EA8AED0093DD3D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB224EA8AED0093DD3D /* Address.swift */; };
+		3B6C8CB724EA8BE00093DD3D /* OrderFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		3B6C8CA124EA36CC0093DD3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B6C8CA324EA36CC0093DD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6C8CAA24EA67250093DD3D /* NumberFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatters.swift; sourceTree = "<group>"; };
+		3B6C8CAE24EA68770093DD3D /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
+		3B6C8CB024EA705E0093DD3D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		3B6C8CB224EA8AED0093DD3D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFormViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			children = (
 				3B6C8C9A24EA36C70093DD3D /* CupcakeCornerApp.swift */,
 				3B6C8C9C24EA36C70093DD3D /* ContentView.swift */,
+				3B6C8CB424EA8B790093DD3D /* Scenes */,
+				3B6C8CAC24EA685E0093DD3D /* Data */,
 				3B6C8CA924EA66FD0093DD3D /* Reusables */,
 				3B6C8C9E24EA36CC0093DD3D /* Assets.xcassets */,
 				3B6C8CA324EA36CC0093DD3D /* Info.plist */,
@@ -78,6 +88,40 @@
 				3B6C8CAA24EA67250093DD3D /* NumberFormatters.swift */,
 			);
 			path = Reusables;
+			sourceTree = "<group>";
+		};
+		3B6C8CAC24EA685E0093DD3D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C8CAD24EA68630093DD3D /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3B6C8CAD24EA68630093DD3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C8CAE24EA68770093DD3D /* Cupcake.swift */,
+				3B6C8CB024EA705E0093DD3D /* Order.swift */,
+				3B6C8CB224EA8AED0093DD3D /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B6C8CB424EA8B790093DD3D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C8CB524EA8BC00093DD3D /* Order Form */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3B6C8CB524EA8BC00093DD3D /* Order Form */ = {
+			isa = PBXGroup;
+			children = (
+				3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */,
+			);
+			path = "Order Form";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6C8CB324EA8AED0093DD3D /* Address.swift in Sources */,
+				3B6C8CAF24EA68770093DD3D /* Cupcake.swift in Sources */,
 				3B6C8C9D24EA36C70093DD3D /* ContentView.swift in Sources */,
+				3B6C8CB124EA705E0093DD3D /* Order.swift in Sources */,
 				3B6C8C9B24EA36C70093DD3D /* CupcakeCornerApp.swift in Sources */,
+				3B6C8CB724EA8BE00093DD3D /* OrderFormViewModel.swift in Sources */,
 				3B6C8CAB24EA67250093DD3D /* NumberFormatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
