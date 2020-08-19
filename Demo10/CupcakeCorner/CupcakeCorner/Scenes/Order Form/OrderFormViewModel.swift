@@ -36,5 +36,40 @@ final class OrderFormViewModel: ObservableObject {
         hasSpecialRequest = currentOrder?.preferences.hasSpecialRequest ?? false
         wantsExtraFrosting = currentOrder?.preferences.wantsExtraFrosting ?? false
         addsSprinkles = currentOrder?.preferences.addsSprinkles ?? false
+        
+        setupSubscribers()
+    }
+}
+
+// MARK: - Publishers
+extension OrderFormViewModel {
+    private var selectedFlavorPubilsher: AnyPublisher<Cupcake.Flavor?, Never> {
+        $selectedFlavorIndex
+            .drop(while: { $0 < 0 })
+            .map({ Cupcake.Flavor.allCases[$0] })
+            .eraseToAnyPublisher()
+    }
+    
+    private var isFormValidPublisher: AnyPublisher<Bool, Never> {
+        Publishers.CombineLatest(selectedFlavorPubilsher, $cupcakeQuantity)
+            .map { (flavor, quantity) in
+                flavor != nil && quantity > 0
+            }
+            .eraseToAnyPublisher()
+    }
+}
+
+// MARK: - Private Helpers
+private extension OrderFormViewModel {
+    func setupSubscribers() {
+        selectedFlavorPubilsher
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.selectedFlavor, on: self)
+            .store(in: &subscriptions)
+        
+        isFormValidPublisher
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.isFormValid, on: self)
+            .store(in: &subscriptions)
     }
 }
