@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,16 +15,8 @@
 		3B6C8CAF24EA68770093DD3D /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CAE24EA68770093DD3D /* Cupcake.swift */; };
 		3B6C8CB124EA705E0093DD3D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB024EA705E0093DD3D /* Order.swift */; };
 		3B6C8CB324EA8AED0093DD3D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB224EA8AED0093DD3D /* Address.swift */; };
-		3B6C8CB724EA8BE00093DD3D /* OrderFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */; };
-		3B6C8CB924EB6F2C0093DD3D /* OrderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8CB824EB6F2C0093DD3D /* OrderFormView.swift */; };
-		3B9B228B24ECBE8800816BC2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B228A24ECBE8800816BC2 /* AppState.swift */; };
-		3B9B228E24ECBEF900816BC2 /* CupcakeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B228D24ECBEF900816BC2 /* CupcakeAPIService.swift */; };
-		3B9B229024ECBF7600816BC2 /* OrderFormContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B228F24ECBF7600816BC2 /* OrderFormContainerViewModel.swift */; };
-		3B9B229224ECC01100816BC2 /* OrdersState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B229124ECC01100816BC2 /* OrdersState.swift */; };
-		3B9B229524ECC47C00816BC2 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9B229424ECC47C00816BC2 /* CypherPoetSwiftUIKit */; };
-		3B9B229824ECD0B300816BC2 /* CypherPoetNetStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9B229724ECD0B300816BC2 /* CypherPoetNetStack */; };
-		3B9B229A24ECD22300816BC2 /* Endpoint+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B229924ECD22300816BC2 /* Endpoint+Order.swift */; };
-		3B9B229C24ECD48400816BC2 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B229B24ECD48400816BC2 /* Dependencies.swift */; };
+		3B78248F24ED136000554FFA /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78248E24ED136000554FFA /* AddressView.swift */; };
+		3B78249124ED14BD00554FFA /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78249024ED14BD00554FFA /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,14 +30,8 @@
 		3B6C8CAE24EA68770093DD3D /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
 		3B6C8CB024EA705E0093DD3D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		3B6C8CB224EA8AED0093DD3D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFormViewModel.swift; sourceTree = "<group>"; };
-		3B6C8CB824EB6F2C0093DD3D /* OrderFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFormView.swift; sourceTree = "<group>"; };
-		3B9B228A24ECBE8800816BC2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		3B9B228D24ECBEF900816BC2 /* CupcakeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeAPIService.swift; sourceTree = "<group>"; };
-		3B9B228F24ECBF7600816BC2 /* OrderFormContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFormContainerViewModel.swift; sourceTree = "<group>"; };
-		3B9B229124ECC01100816BC2 /* OrdersState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersState.swift; sourceTree = "<group>"; };
-		3B9B229924ECD22300816BC2 /* Endpoint+Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Order.swift"; sourceTree = "<group>"; };
-		3B9B229B24ECD48400816BC2 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		3B78248E24ED136000554FFA /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		3B78249024ED14BD00554FFA /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9B229824ECD0B300816BC2 /* CypherPoetNetStack in Frameworks */,
-				3B9B229524ECC47C00816BC2 /* CypherPoetSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				3B6C8C9A24EA36C70093DD3D /* CupcakeCornerApp.swift */,
-				3B6C8C9C24EA36C70093DD3D /* ContentView.swift */,
-				3B9B228C24ECBECF00816BC2 /* Networking */,
-				3B6C8CB424EA8B790093DD3D /* Scenes */,
-				3B6C8CAC24EA685E0093DD3D /* Data */,
+				3B78248D24ED134E00554FFA /* Views */,
+				3B6C8CAD24EA68630093DD3D /* Models */,
 				3B6C8CA924EA66FD0093DD3D /* Reusables */,
 				3B6C8C9E24EA36CC0093DD3D /* Assets.xcassets */,
 				3B6C8CA324EA36CC0093DD3D /* Info.plist */,
@@ -109,60 +91,24 @@
 			path = Reusables;
 			sourceTree = "<group>";
 		};
-		3B6C8CAC24EA685E0093DD3D /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3B9B228924ECBE7600816BC2 /* State */,
-				3B6C8CAD24EA68630093DD3D /* Models */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		3B6C8CAD24EA68630093DD3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3B6C8CAE24EA68770093DD3D /* Cupcake.swift */,
 				3B6C8CB024EA705E0093DD3D /* Order.swift */,
+				3B6C8CAE24EA68770093DD3D /* Cupcake.swift */,
 				3B6C8CB224EA8AED0093DD3D /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3B6C8CB424EA8B790093DD3D /* Scenes */ = {
+		3B78248D24ED134E00554FFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3B6C8CB524EA8BC00093DD3D /* Order Form */,
+				3B6C8C9C24EA36C70093DD3D /* ContentView.swift */,
+				3B78248E24ED136000554FFA /* AddressView.swift */,
+				3B78249024ED14BD00554FFA /* CheckoutView.swift */,
 			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		3B6C8CB524EA8BC00093DD3D /* Order Form */ = {
-			isa = PBXGroup;
-			children = (
-				3B9B228F24ECBF7600816BC2 /* OrderFormContainerViewModel.swift */,
-				3B6C8CB624EA8BE00093DD3D /* OrderFormViewModel.swift */,
-				3B6C8CB824EB6F2C0093DD3D /* OrderFormView.swift */,
-			);
-			path = "Order Form";
-			sourceTree = "<group>";
-		};
-		3B9B228924ECBE7600816BC2 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				3B9B228A24ECBE8800816BC2 /* AppState.swift */,
-				3B9B229124ECC01100816BC2 /* OrdersState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		3B9B228C24ECBECF00816BC2 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				3B9B228D24ECBEF900816BC2 /* CupcakeAPIService.swift */,
-				3B9B229B24ECD48400816BC2 /* Dependencies.swift */,
-				3B9B229924ECD22300816BC2 /* Endpoint+Order.swift */,
-			);
-			path = Networking;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +128,6 @@
 			);
 			name = CupcakeCorner;
 			packageProductDependencies = (
-				3B9B229424ECC47C00816BC2 /* CypherPoetSwiftUIKit */,
-				3B9B229724ECD0B300816BC2 /* CypherPoetNetStack */,
 			);
 			productName = CupcakeCorner;
 			productReference = 3B6C8C9724EA36C70093DD3D /* CupcakeCorner.app */;
@@ -213,8 +157,6 @@
 			);
 			mainGroup = 3B6C8C8E24EA36C70093DD3D;
 			packageReferences = (
-				3B9B229324ECC47C00816BC2 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */,
-				3B9B229624ECD0B300816BC2 /* XCRemoteSwiftPackageReference "CypherPoetNetStack" */,
 			);
 			productRefGroup = 3B6C8C9824EA36C70093DD3D /* Products */;
 			projectDirPath = "";
@@ -242,19 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9B229C24ECD48400816BC2 /* Dependencies.swift in Sources */,
-				3B9B229024ECBF7600816BC2 /* OrderFormContainerViewModel.swift in Sources */,
+				3B78248F24ED136000554FFA /* AddressView.swift in Sources */,
 				3B6C8CB324EA8AED0093DD3D /* Address.swift in Sources */,
-				3B6C8CB924EB6F2C0093DD3D /* OrderFormView.swift in Sources */,
 				3B6C8CAF24EA68770093DD3D /* Cupcake.swift in Sources */,
-				3B9B229A24ECD22300816BC2 /* Endpoint+Order.swift in Sources */,
-				3B9B229224ECC01100816BC2 /* OrdersState.swift in Sources */,
-				3B9B228B24ECBE8800816BC2 /* AppState.swift in Sources */,
 				3B6C8C9D24EA36C70093DD3D /* ContentView.swift in Sources */,
 				3B6C8CB124EA705E0093DD3D /* Order.swift in Sources */,
 				3B6C8C9B24EA36C70093DD3D /* CupcakeCornerApp.swift in Sources */,
-				3B9B228E24ECBEF900816BC2 /* CupcakeAPIService.swift in Sources */,
-				3B6C8CB724EA8BE00093DD3D /* OrderFormViewModel.swift in Sources */,
+				3B78249124ED14BD00554FFA /* CheckoutView.swift in Sources */,
 				3B6C8CAB24EA67250093DD3D /* NumberFormatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,38 +378,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3B9B229324ECC47C00816BC2 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CypherPoet/CypherPoetSwiftUIKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.47;
-			};
-		};
-		3B9B229624ECD0B300816BC2 /* XCRemoteSwiftPackageReference "CypherPoetNetStack" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CypherPoet/CypherPoetNetStack";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.28;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3B9B229424ECC47C00816BC2 /* CypherPoetSwiftUIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3B9B229324ECC47C00816BC2 /* XCRemoteSwiftPackageReference "CypherPoetSwiftUIKit" */;
-			productName = CypherPoetSwiftUIKit;
-		};
-		3B9B229724ECD0B300816BC2 /* CypherPoetNetStack */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3B9B229624ECD0B300816BC2 /* XCRemoteSwiftPackageReference "CypherPoetNetStack" */;
-			productName = CypherPoetNetStack;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B6C8C8F24EA36C70093DD3D /* Project object */;
 }
